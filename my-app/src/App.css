@@ -1,6 +1,9 @@
 body {
   background-image: url(./img/wallpaper.jpg);
   align-items: center;
+  background-color: black;
+  justify-content: center;
+  max-width: 500px;
 }
 h1 {
   color: white;
@@ -14,4 +17,11 @@ button {
 } 
 .button {
   margin-left: 100px;
+}
+
+.ON {
+     
+}
+.OFF {
+  
 }
