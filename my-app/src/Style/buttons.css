@@ -1,0 +1,29 @@
+button {
+    background: #42455a;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    inset: -1px 30px;
+    background: #00c2cb;
+    transition: 500ms;
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+  }
+  
+  button:hover::before {
+    inset: -1px;
+  }
+  
+  button::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #22232e;
+    z-index: -1;
+  }
