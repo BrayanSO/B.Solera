@@ -1,29 +1,162 @@
-button {
-    background: #42455a;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+body {
+  background-color: rgb(139, 138, 138);
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.ON {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #00c7ec;
+  border: 1px solid #00c7ec;
+  border-radius: 5px;
+  line-height: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.ON:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #00c7ec;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.ON:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+  -moz-animation: shine 0.5s 0s linear;
+  animation: shine 0.5s 0s linear;
+}
+.ON:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.ON:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@-webkit-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
   }
-  
-  button::before {
-    content: '';
-    position: absolute;
-    inset: -1px 30px;
-    background: #00c2cb;
-    transition: 500ms;
-    animation: rotate 4s linear infinite;
-    z-index: -1;
+  50% {
+    opacity: 1;
   }
-  
-  button:hover::before {
-    inset: -1px;
+  to {
+    opacity: 0;
+    left: 100%;
   }
-  
-  button::after {
-    content: '';
-    position: absolute;
-    inset: 3px;
-    border-radius: 50%;
-    background: #22232e;
-    z-index: -1;
+}
+@-moz-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
   }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/*  button off */
+
+.OFF {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #00c7ec;
+  border: 1px solid #00c7ec;
+  border-radius: 5px;
+  line-height: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.OFF:hover {
+  color: rgb(5, 5, 5);
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #ec0000;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.OFF:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+  -moz-animation: shine 0.5s 0s linear;
+  animation: shine 0.5s 0s linear;
+}
+.OFF:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.OFF:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
