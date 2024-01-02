@@ -17,9 +17,3 @@ h1 {
   text-align: center;
 }
 
-.App {
-    display: flex;
-    justify-content: space-between; /* Ajusta la distribución de los elementos en la línea */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-  }
-  
