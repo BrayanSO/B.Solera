@@ -1,7 +1,6 @@
 body {
   background-color: rgb(139, 138, 138);
-  text-align: center;
-  padding-top: 50px;
+  padding-top: 5px;
   color: white;
 }
 
@@ -9,8 +8,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Exo 2", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
+  font-weight: 30px;
+  font-size: 15px;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -109,7 +108,7 @@ body {
   text-transform: uppercase;
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 15px;
   display: inline-block;
   position: relative;
   text-align: center;

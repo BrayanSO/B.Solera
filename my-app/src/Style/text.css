@@ -1,25 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-#container {
-    position: absolute;
-    margin: auto;
-    width: 100vw;
-    height: 80pt;
-    top: 0;
-    bottom: 0;
-
-    filter: url(#threshold) blur(0.6px);
+@import url("https://fonts.googleapis.com/css?family=Khula:700");
+body {
+  background: #8a8787;
 }
-
-#text1,
-#text2 {
-    position: absolute;
+.hidden {
+  opacity:0;
+}
+.console-containertext {
+ 
+  font-family:Khula;
+  font-size:50px;
+  color:black;
+  margin:auto;
+  text-align: right;
   
-    display: inline-block;
-
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-
-    text-align: left;
-
-    user-select: none;
 }
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+

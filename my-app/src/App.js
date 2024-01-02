@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import "./Style/App.css";
+import "./Style/gosth.css";
 import "./Style/buttons.css";
 import "./Style/text.css";
 
 const App = () => {
   useEffect(() => {
-    consoleText(['Hello World', 'console.log', 'border:20px', 'git add ..',], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
+    consoleText(['Hello World' , 'console.log' , 'border:20px' , 'git add ..',], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
 
     const elts = {
       text1: document.getElementById("text1"),
@@ -141,19 +141,21 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+< div className="App">
       <h1> B.Solera</h1>
-      <div>
+      <div className='console-containertext'>
+        <span id='text'></span><div className='console-underscore' id='console'>&#95;</div>
+        <div id="containertext">
+          <span id="text1"></span>
+          <span id="text2"></span>
+    </div>
+      </div>
+        <div>
         <button className="ON">ON</button>
         <button className="OFF">OFF</button>
       </div>
-      <div className='console-container'>
-        <span id='text'></span><div className='console-underscore' id='console'>&#95;</div>
-        <div id="container">
-          <span id="text1"></span>
-          <span id="text2"></span>
-        </div>
 
+        <div>
         <svg id="filters">
           <defs>
             <filter id="threshold">
@@ -164,8 +166,8 @@ const App = () => {
             </filter>
           </defs>
         </svg>
-      </div>
-    </div>
+        </div>
+   </div>
   );
 }
 
