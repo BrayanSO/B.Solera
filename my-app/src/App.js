@@ -7,7 +7,7 @@ import "./Style/ConsoleAnimation.css";
 
 const Header = () => {
   return (
-    <div>
+    <div className='App'>
       <TextAnimation></TextAnimation>
       <h1> B.Solera</h1>
       <ConsoleAnimation></ConsoleAnimation>
