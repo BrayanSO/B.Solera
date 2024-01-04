@@ -17,3 +17,7 @@ h1 {
   text-align: center;
 }
 
+.App {
+    display: flex;
+    justify-content: space-between;
+}
