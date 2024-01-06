@@ -7,15 +7,17 @@ import "./Style/ConsoleAnimation.css";
 
 const Header = () => {
   return (
-    <div className='App'>
+    <div>
+      <div className='App'>
       <TextAnimation></TextAnimation>
-      <h1> B.Solera</h1>
       <ConsoleAnimation></ConsoleAnimation>
+      </div>
       <div>
         <button className="ON">ON</button>
         <button className="OFF">OFF</button>
       </div>
     </div>
+    
   );
 }
 
