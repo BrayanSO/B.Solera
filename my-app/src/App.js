@@ -12,7 +12,7 @@ const Header = () => {
       <TextAnimation></TextAnimation>
       <ConsoleAnimation></ConsoleAnimation>
       </div>
-      <div>
+      <div className='buttons'>
         <button className="ON">ON</button>
         <button className="OFF">OFF</button>
       </div>
