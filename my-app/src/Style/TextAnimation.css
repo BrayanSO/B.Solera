@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 #containertext {
-    width: 100px;
-    height: 80px;
+    width: 220px;
+    height: 60px;
     filter: url(#threshold) blur(0.6px);    
     display: flex;  
     margin:auto;
@@ -11,7 +11,7 @@
 #text2 {
     position: absolute;
     font-family: "Raleway", sans-serif;
-    font-size: 40px;
+    font-size: 25px;
     user-select: none;
     
 }
