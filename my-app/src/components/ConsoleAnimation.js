@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import "../Style/ConsoleAnimation.css"
 
 const ConsoleAnimation = () => {
   useEffect(() => {

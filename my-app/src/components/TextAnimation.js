@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import "../Style/TextAnimation.css"
 const TextAnimation = () => {
   useEffect(() => {
     const elts = {
